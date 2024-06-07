@@ -5,7 +5,7 @@
 
 The dataset is imported from A Benchmark Dataset for Learning to Intervene in Online Hate Speech. 
 <b>Link:</b> https://github.com/jing-qian/A-Benchmark-Dataset-for-Learning-to-Intervene-in-Online-Hate-Speech
-The dataset includes approximately 5,000 posts and comments. Each row contains a specific post's comments and an index indicating which comments are considered hate speech. Additionally, the dataset features human-written explanations for why these comments are classified as hate speech.
+<p>The dataset includes approximately 5,000 posts and comments. Each row contains a specific post's comments and an index indicating which comments are considered hate speech. Additionally, the dataset features human-written explanations for why these comments are classified as hate speech.</p>
 
 ## Restructured Reddit
 

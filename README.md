@@ -18,7 +18,7 @@ The dataset is imported from A Benchmark Dataset for Learning to Intervene in On
 #### Preprocessed Dataset
 
 The preprocessed dataset files are stored in Google Drive
-<p><b>Link:</b> https://drive.google.com/drive/folders/1uJnUbNHYbTXL4nOLgki3kHIhFD6HgKCu?usp=sharing</p>p>
+<p><b>Link:</b> https://drive.google.com/drive/folders/1uJnUbNHYbTXL4nOLgki3kHIhFD6HgKCu?usp=sharing</p>
 
 ##### Restructured Reddit
 

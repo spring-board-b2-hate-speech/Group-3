@@ -1,4 +1,4 @@
-##Summary of my Work on Machine Learning and Deep Learning Models for Imbalanced Data
+## Summary of my Work on Machine Learning and Deep Learning Models for Imbalanced Data
 
 ### Machine Learning Models:
 - <b>Logistic Regression:</b> Implemented with class balancing techniques to handle imbalanced datasets. Hyperparameters were fine-tuned using GridSearchCV and RandomizedSearchCV.<br>

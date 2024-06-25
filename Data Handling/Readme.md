@@ -1,21 +1,29 @@
-# Summary of my Work on Imbalanced Data Handling Techniques
-## 1. Techniques I've Explored:
+##Summary of my Work on Machine Learning and Deep Learning Models for Imbalanced Data
 
-### (a) Resampling Methods:
+### Machine Learning Models:
+- <b>Logistic Regression:</b> Implemented with class balancing techniques to handle imbalanced datasets. Hyperparameters were fine-tuned using GridSearchCV and RandomizedSearchCV.<br>
+- <b>Random Forest:</b> Used with class weights to address imbalance, with extensive hyperparameter tuning to enhance performance.<br>
+- <b>Naive Bayes:</b> Applied Multinomial Naive Bayes for text classification.<br>
 
-<b>Oversampling:</b> I've used techniques like SMOTE (Synthetic Minority Over-sampling Technique) to balance the dataset by increasing the number of minority class instances.<br>
-<b>Undersampling:</b>You applied methods like NearMiss to reduce the number of majority class instances.<br>
+### Evaluation Metrics:
 
-### (b) Algorithmic Approaches:
+- Assessed models using Precision, Recall, F1-score, ROC-AUC, and confusion matrices to visualize performance and error distribution.<br>
+### Deep Learning Models:
 
-<b>Cost-sensitive Learning:</b>  Implemented models that consider the cost of misclassifying each class differently, which is particularly useful in imbalanced datasets.<br>
-<b>Ensemble Methods:  </b> I have experimented with techniques like Balanced Random Forest and EasyEnsemble to handle imbalance by using multiple models.<br>
+- <b>LSTM:</b>  Leveraged for sequence data such as text, utilizing Keras for model construction.<br>
+- <b>Bidirectional LSTM:</b>  Enhanced context understanding by processing data in both directions.<br>
+- <b>Attention Mechanism: </b> Incorporated to focus on significant input sequence parts for improved performance.<br>
+### Evaluation and Techniques:
 
-### (c) Anomaly Detection:
+- Similar evaluation metrics as machine learning models were used, along with methods like early stopping and learning rate adjustments to fine-tune training.<br>
+### Data Preprocessing and Feature Engineering:
 
-Utilized anomaly detection techniques where minority classes are treated as anomalies, and models like One-Class SVM were employed to identify these anomalies.<br>
+- Tokenized text and used FastText vectors and TfidfVectorizer for feature extraction. Cleaned comments for noise reduction.<br>
+- Applied SMOTE for class balancing and balanced class weights in models.<br>
+- Utilized TruncatedSVD for dimensionality reduction and pipeline approaches for streamlined model training.<br>
+### Imbalanced Data Handling Techniques:
 
-## 2. Outcomes Achieved:
-<b>Improved Model Performance:</b>  Your techniques have led to a better balance in the datasets, resulting in improved metrics such as F1 score, precision, and recall, particularly for the minority class.<br>
-<b>Enhanced Model Robustness:</b>  Models became more robust against the class imbalance, which is crucial in real-world scenarios where class distributions are rarely equal.<br>
-<b>Understanding of Imbalanced Data Challenges:</b>  You gained significant insight into the issues and complexities associated with imbalanced datasets, equipping you to handle such challenges in future projects.<br>
+- <b>Resampling: </b>Used SMOTE for oversampling and NearMiss for undersampling.<br>
+- <b>Algorithmic Approaches:</b> Employed cost-sensitive learning and ensemble methods like Balanced Random Forest and EasyEnsemble.<br>
+- <b>Anomaly Detection: </b>Treated minority classes as anomalies using One-Class SVM.<br>
+- <b>Data Augmentation:</b> For image data, used transformations to boost minority class samples.<br>

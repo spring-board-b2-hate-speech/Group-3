@@ -32,21 +32,21 @@ The preprocessed dataset files are stored in Google Drive
 
 <p>The dataset undergoes preprocessing to prepare it for training. This involves several steps such as converting text to lowercase, removing HTML tags and URLs, eliminating stop words and punctuation, handling numbers and autocorrecting, treating chat words, managing emojis, and performing tokenization, stemming, and lemmatization.</p>
 
-#### Data Files
+##### Data Files
 
 <p>chat_words.json: Contains chat word abbreviations and their corresponding meanings.</p>
 <p>number_meanings.json: Contains special number meanings and their interpretations.</p>
 
-#### Reddit Tokenization
+##### Reddit Tokenization
 
 <p>The dataset includes tokenized and lemmatized text data from Reddit comments, ensuring that each word is broken down to its base form.</p>
 
-#### Data Splits
+##### Data Splits
 
 <p><b>Train: </b> Contains the training data used to train the models.</p>
-<p><b>Test</b> Contains the test data used to evaluate the models.</p>p>
+<p><b>Test</b> Contains the test data used to evaluate the models.</p>
 
-#### Encoded Datasets
+##### Encoded Datasets
 
 <p><b>Train Encoded:</b> Contains the encoded version of the training data, transformed using FastText or BERT embeddings as appropriate.</p>
 <p><b>Test Encoded:</b> Contains the encoded version of the test data, similarly transformed.</p>
@@ -67,26 +67,26 @@ The preprocessed dataset files are stored in Google Drive
 
 ### Machine Learning Models
 
-<pre>We implemented various machine learning models to identify hate speech, including:
-Linear Regression
+<p>We implemented various machine learning models to identify hate speech, including:</p>
+<pre>Linear Regression
 Logistic Regression
 Gradient Boosting
 K-Nearest Neighbour
 SGD Classifier
 Random Forest
 Support Vector Machine (SVM)
-Voting Classifier
-After evaluating the performance of these models, we chose the Support Vector Machine (SVM) because it delivered superior results compared to the other models. Following the selection, we performed hyperparameter tuning on the SVM to optimize its parameters for better performance. The final results yielded an accuracy score of 82% and an F1 score of 66% for hate speech detection. These scores were set as our benchmark for evaluating deep learning models, ensuring that any deep learning approach we test meets or exceeds these performance metrics.</pre>
+Voting Classifier</pre>
+<p>After evaluating the performance of these models, we chose the Support Vector Machine (SVM) because it delivered superior results compared to the other models. Following the selection, we performed hyperparameter tuning on the SVM to optimize its parameters for better performance. The final results yielded an accuracy score of 82% and an F1 score of 66% for hate speech detection. These scores were set as our benchmark for evaluating deep learning models, ensuring that any deep learning approach we test meets or exceeds these performance metrics.</p>
 
 ### Deep Learning Models
 
-<pre>We explored several deep learning models for hate speech detection, including:
-Simple Neural Network (NN)
+<p>We explored several deep learning models for hate speech detection, including:</p>
+<pre>Simple Neural Network (NN)
 Convolutional Neural Network (CNN)
 Long Short-Term Memory Network (LSTM)
-BERT
-To enhance the performance of these models, we implemented techniques such as early stopping and learning rate reduction. For the Simple NN, CNN, and LSTM models, we utilized FastText encodings to represent the input text. However, for the BERT model, we used BERT embeddings, which provide more context-aware representations of the text.
+BERT</pre>
+<p>To enhance the performance of these models, we implemented techniques such as early stopping and learning rate reduction. For the Simple NN, CNN, and LSTM models, we utilized FastText encodings to represent the input text. However, for the BERT model, we used BERT embeddings, which provide more context-aware representations of the text. 
 The performance metrics for the Simple NN, CNN, and LSTM models were similar, achieving an accuracy of 85% and an F1 score of 71% for hate speech detection. In contrast, the BERT model outperformed the others, achieving an accuracy of 89% and an F1 score of 89%.
-Based on these results, we selected BERT as our final model for hate speech detection and saved this model for further implementation and deployment.</pre>
+Based on these results, we selected BERT as our final model for hate speech detection and saved this model for further implementation and deployment.</p>
 
 #### The individual implementations of the models can be found in separate branches of the repository. Each team member experimented with different approaches and models, and we decided to use the best methods from these individual efforts.
